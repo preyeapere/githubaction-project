@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: diamondappdeployment
+  labels:
+    app: diamondappdeployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: diamondappdeployment
+  template:
+    metadata:
+      labels:
+        app: diamondappdeployment
+    spec:
+      containers:
+        - name: diamondappdeployment
+          image: 637423480761.dkr.ecr.us-east-1.amazonaws.com/preye-ecr:1.5
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
