@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: diamondappdeployment
-          image: 637423480761.dkr.ecr.us-east-1.amazonaws.com/diamondimg:latest
+          image: 637423480761.dkr.ecr.us-east-1.amazonaws.com/diamondimg
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
