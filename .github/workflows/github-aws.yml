@@ -32,8 +32,8 @@ jobs:
       - name: Build docker image to push to aws ecr
         env:
            REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-           REPOSITORY: preye-ecr
-           IMAGE_TAG: latest
+           REPOSITORY: diamondimg
+           IMAGE_TAG: 1.5
         run: |
            docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
            docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
