@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: diamondappdeployment
-          image: 637423480761.dkr.ecr.us-east-1.amazonaws.com/preye-ecr:1.5
+          image: 637423480761.dkr.ecr.us-east-1.amazonaws.com/preye-ecr:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
