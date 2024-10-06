@@ -1,5 +1,5 @@
 name: Deployment of node.js app into aws-eks
-0n:
+on:
    push:
       branches: ["main"]
    pull_request:
